@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 import game from './game'
 
 const reducer = combineReducers({
-    ...game
+    game
 })
 
 export default reducer

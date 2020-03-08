@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import ActiveFieldContainer from './containers/ActiveFieldContainer'
+import ActiveField from './containers/ActiveField'
 
 function App() {
   return (
-    <ActiveFieldContainer/>
+   <div>
+      <ActiveField/>
+   </div>
   );
 }
 

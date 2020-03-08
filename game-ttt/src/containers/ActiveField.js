@@ -1,21 +1,18 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import ActiveField from '../components/ActiveField'
+import ActiveField from '../conponents/ActiveField'
 import * as Actions from '../actions'
 
 const mapStateToProps = state => ({
-    fullState: state
+    game: state.game
   })
   
   const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators(Actions, dispatch)
   })
 
-
-  const ActiveFieldContainer = connect(
+  export default connect(
     mapStateToProps,
     mapDispatchToProps
   )(ActiveField)
-  
-  export default ActiveFieldContainer

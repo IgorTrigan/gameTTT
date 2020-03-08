@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension';
 import reducer from './reducers'
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(reducer)
+const store = createStore(reducer, composeWithDevTools())
 const rootElement = document.getElementById('root')
 ReactDOM.render(
   <Provider store={store}>
