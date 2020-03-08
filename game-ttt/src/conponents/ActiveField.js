@@ -26,8 +26,7 @@ const getStepType = function(steps, row, column){
    }  
     return (
         <div>
-            <h1>{game.title}</h1>
-            <h1>{game.steps.length}</h1>
+            <h1>Now is {game.userOptions.currentStepType} turn</h1>
             <Container>
              {rows}
             </Container>

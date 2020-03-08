@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-redux-websocket": "^1.0.3"
+  }
+}
