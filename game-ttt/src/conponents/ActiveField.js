@@ -7,7 +7,7 @@ import Cell from './Cell';
 const ActiveField = ({ game, actions }) => {
   
 const getStepType = function(steps, row, column){
-  var step = steps.filter(s => s.row === row && s.column === column);
+  var step = steps.find(s => s.row === row && s.column === column);
   return step?.stepType;
 }
   var options = game.options;
